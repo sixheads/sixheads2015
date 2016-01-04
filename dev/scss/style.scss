@@ -1,0 +1,75 @@
+/*
+Theme Name: sixheads
+Theme URI: http://www.sixheads.com/
+Author: John Fry
+Author URI: http://www.sixheads.com/
+Description: sixheads is a starter custom theme based on Underscores http://underscores.me/
+Version: 1.0
+Text Domain: sixheads
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0.0 Settings
+    0.1 Variables
+    0.2 Mixins
+1.0 Reset
+2.0 Grid
+3.0 Typography
+4.0 Elements
+5.0 Forms
+6.0 Navigation
+	6.1 Links
+	6.2 Menus
+7.0 Helpers
+	7.1 Alignment
+	7.2 Clearings
+    7.3 Accessibility
+8.0 Widgets
+9.0 Content
+	9.1 Posts and pages
+	9.2 Asides
+	9.3 Comments
+10.0 Media
+	10.1 Captions
+	10.2 Galleries
+11.0 Modules & Layout
+
+--------------------------------------------------------------*/
+// 0.0 Settings
+@import 'variables';
+@import 'mixins';
+
+// 1.0 Reset
+@import 'reset';
+
+// 2.0 Grid
+@import 'grid';
+
+// 3.0 Typography
+@import 'typography';
+
+// 4.0 Elements
+@import 'elements';
+
+// 5.0 Forms
+@import 'forms';
+
+// 6.0 Navigation
+@import 'navigation';
+
+// 7.0 Helpers
+@import 'helpers';
+
+// 8.0 Widgets
+@import 'widgets';
+
+// 9.0 Content
+@import 'content';
+
+// 10.0 Media
+@import 'media';
+
+// 11.0 Modules & Layout
+@import 'modules';

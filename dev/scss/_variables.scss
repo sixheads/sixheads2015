@@ -1,0 +1,32 @@
+// 0.1 Variables
+
+// Typography
+$font-size: 16;
+
+$font-family: 'CordaLight', Georgia, 'Times New Roman', Times, serif;
+$font-line-height: 1.4;
+$font-weight__normal: normal;
+$font-weight__bold: bold;
+
+// Colour
+$color-brand: #78b4bf;
+$color-brand-light: lighten($color-brand, 35%);
+$color-text: #464e43;
+
+$color-background: #fff;
+
+$color-link: $color-brand;
+$color-link__visited: $color-brand;
+$color-link__hover: darken($color-brand, 20%);
+
+$white: #fff;
+$black: #000;
+$grey: #f9f9f7;
+
+// Spacing
+$spacing: 1em;
+
+// border
+
+$border-grey: 1px solid $grey;
+$border-brand: 1px solid $color-brand;

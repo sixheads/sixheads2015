@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+4.0 Elements
+--------------------------------------------------------------*/
+
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: $spacing*1.5;
+}
+
+ul,
+ol {
+    margin: 0 0 $spacing*1.5 $spacing*3;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: $spacing*1.5;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 $spacing*1.5 $spacing*1.5;
+}
+
+img {
+    height: auto; /* Make sure images are scaled correctly. */
+    width: 100%; /* Adhere to container width. */
+}
+
+figure {
+    margin: 0;
+}
+
+table {
+    margin: 0 0 $spacing*1.5;
+    width: 100%;
+}
+
+th {
+    font-weight: $font-weight__bold;
+}

@@ -1,0 +1,31 @@
+# Dev Content
+dev/bower_components
+dev/img
+dev/js
+dev/bower.json
+
+
+# Dist Content
+sixheads/wp-admin
+sixheads/wp-includes
+sixheads/.htaccess
+sixheads/*.php
+sixheads/license.txt
+sixheads/readme.html
+sixheads/temp
+
+
+# wp-content folders
+sixheads/wp-content/languages
+sixheads/wp-content/plugins
+sixheads/wp-content/upgrade
+sixheads/wp-content/uploads
+sixheads/wp-content/themes/index.php
+
+
+# Other Content
+node_modules
+gulpfileOLD.js
+myStarterNotes.txt
+*.sublime-project
+*.sublime-workspace

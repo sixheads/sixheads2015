@@ -1,0 +1,269 @@
+/*--------------------------------------------------------------
+11.0 Modules & Layout
+--------------------------------------------------------------*/
+
+// 11.1 Header
+
+.site-header {
+    border-top: 10px solid $color-brand;
+}
+
+.site-branding {
+    float: left;
+    width: calc-em(140);
+    margin: $spacing;
+
+    @include bp(md) {
+        float: none;
+        margin: $spacing auto;
+        // outline: 1px dotted lime;
+        width: calc-em(250);
+    }
+}
+
+.site-description {
+    display: none;
+    text-align: center;
+    // font-weight: bold;
+    text-transform: uppercase;
+    // color: $color-brand;
+    font-size: calc-em(14);
+    font-family: Helvetica, sans-serif;
+    border-top: 1px solid $black;
+
+    @include bp(md) {
+        display: block;
+    }
+}
+
+// 11.2 Footer
+
+.site-info {
+    background-color: $color-brand;
+    text-align: center;
+    color: $white;
+    padding: $spacing;
+}
+
+.site-social {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        margin: $spacing;
+    }
+    a {
+        font-size: calc-em(35);
+        text-decoration: none;
+
+        &:hover, &:active {
+            color: $color-link__hover;
+        }
+    }
+}
+
+
+// 11.3 Home Page
+// 11.3a Intro
+
+.intro-hero-image {
+    text-align: center;
+    img {
+        max-width: 1000px;
+    }
+}
+.intro-text {
+    text-align: center;
+    margin: $spacing;
+    font-size: calc-em(20);
+
+    @include bp(md) {
+        max-width: calc-em(500);
+        margin: $spacing*2 auto;
+        font-size: calc-em(28);
+    }
+}
+
+// 11.3b Section Titles
+
+.section-title {
+    // display: inline-block;
+    text-align: center;
+    font-size: calc-em(30);
+    margin: $spacing auto;
+    position: relative;
+    z-index: 1000;
+    background: url(img/dash.png) no-repeat center 25px;
+    width: 290px;
+
+    @include bp(md) {
+        margin-top: $spacing*2;
+    }
+}
+
+.section-introduction {
+    text-align: center;
+    max-width: calc-em(600);
+    margin: 0 auto;
+    // text-transform: uppercase;
+    color: $color-brand;
+}
+
+
+// 11.3c Work
+
+.project-item img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+
+
+    &:hover {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+// 11.3d Services
+
+.services-wrapper {
+    background-color: $grey;
+}
+
+.services-wrapper__inner {
+    padding: $spacing;
+}
+
+.services-hero-image {
+    max-width: calc-em(860);
+    margin: 0 auto;
+
+}
+
+.service-grid {
+    max-width: calc-em(860);
+    margin: 0 auto;
+    text-align: center;
+}
+.service-header {
+    text-transform: uppercase;
+    margin: $spacing;
+    font-size: calc-em(20);
+
+    @include bp(sm) {
+        margin-top: 0;
+    }
+}
+
+
+
+// 11.3e About
+
+.about-wrapper {
+    margin: $spacing;
+    text-align: center;
+}
+
+.about-header {
+    font-size: calc-em(20);
+    padding: $spacing 0;
+}
+
+.profile-wrapper {
+    max-width: calc-em(860);
+    margin: 0 auto;
+}
+.profile-item img {
+    max-width: 200px;
+}
+
+// 11.3f Contact
+
+.contact-wrapper {
+    background-color: $color-brand-light;
+}
+
+.contact-wrapper__inner {
+    max-width: calc-em(860);
+    margin: 0 auto;
+    padding: $spacing;
+}
+
+.ninja-forms-cont {
+    max-width: calc-em(600);
+    margin: 0 auto;
+}
+
+// 11.4 Single Project Page
+
+.single-project__wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.project-hero-image {
+    width: 100%;
+}
+
+.project-info {
+    @include bp(md) {
+        padding-top: $spacing;
+    }
+}
+
+
+.single-projects {
+    .entry-title {
+        text-align: center;
+        font-size: calc-em(20);
+        margin: $spacing auto $spacing;
+        position: relative;
+        z-index: 1000;
+        background: url(img/dash.png) no-repeat center 16px;
+        width: 290px;
+
+        @include bp(md) {
+            // margin-top: 0;
+            font-size: calc-em(30);
+            background-position: left 25px;
+            text-align: left;
+            // margin-left: 0;
+            width: auto;
+            margin: 0 0 $spacing/2;
+        }
+    }
+}
+
+.single-post-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing;
+}
+
+.meta-project-categories {
+    text-transform: uppercase;
+    color: $color-brand;
+    text-align: center;
+    font-size: calc-em(14);
+
+    @include bp(md) {
+        text-align: left;
+        font-size: calc-em(16);
+    }
+}
+
+// 404 Page
+
+.error-404 {
+    text-align: center;
+
+    .page-content {
+        text-align: center;
+    }
+}

@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+6.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+6.1 Links
+--------------------------------------------------------------*/
+a {
+    color: $color-link;
+}
+
+a:visited {
+    color: $color-link__visited;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: $color-link__hover;
+}
+
+/*--------------------------------------------------------------
+6.2 Menus
+--------------------------------------------------------------*/
+
+// RESPONSIVE NAV
+a.menu-toggle {
+    float: right;
+    display: block;
+    margin: $spacing;
+    text-decoration: none;
+    // font-size: calc-em(20);
+}
+.main-navigation {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        // border-top: 1px solid #808080;
+    }
+    li a {
+        display: block;
+        padding: 12px;
+        border-bottom: $border-brand;
+    }
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+}
+.js .main-navigation {
+    overflow: hidden;
+    max-height: 0;
+}
+.main-navigation.active {
+    max-height: 240px;
+}
+
+@include bp(md) {
+    a.menu-toggle {
+       display: none;
+    }
+    .js .main-navigation {
+        max-height: none;
+    }
+    .main-navigation {
+        float: none;
+        text-align: center;
+
+        ul {
+            margin: 0 0 0 -4px;
+            border: 0;
+        }
+        li {
+            // float: left;
+            display: inline-block;
+            margin: 0 4px;
+        }
+        li a {
+            border: 0;
+        }
+    }
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+}
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+    margin: 0 0 $spacing*1.5;
+    overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+// 6.3 Arrow nav
+
+.arrow {
+    text-align: center;
+    padding: $spacing*2 0;
+    img {
+        width: calc-em(30);
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .arrow-svg {
+        width: calc-em(30);
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
