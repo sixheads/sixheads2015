@@ -15,7 +15,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single-project' ); ?>
 
-			<div class="single-post-nav"><?php sixheads_post_nav(); ?></div>
+      <?php get_template_part( 'content', 'related' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
 

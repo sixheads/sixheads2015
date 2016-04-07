@@ -59,7 +59,7 @@ get_header(); ?>
 				    // The Loop
 				    while ( $projects->have_posts() ) : $projects->the_post();
 				 ?>
-					<article class="project-item grid-col span-1 span-2__sm span-3__md">
+					<article class="project-item grid-col span-2 span-2__sm span-3__md span-4__lg">
 						<a href="<?php the_permalink(); ?>">
 						<?php the_post_thumbnail( 'project-thumb' ); ?>
 					    </a>
