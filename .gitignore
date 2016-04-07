@@ -3,6 +3,7 @@ dev/bower_components
 dev/img
 dev/js
 dev/bower.json
+dev/.htaccess copy
 
 
 # Dist Content
